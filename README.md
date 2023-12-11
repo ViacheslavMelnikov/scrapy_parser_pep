@@ -37,3 +37,31 @@ pip install -r requirements.txt
 ## Запустить проект:
 
 scrapy crawl pep
+
+## Примеры получаемых запросов в файле отражающим список PEP:
+number,name,status
+1,PEP Purpose and Guidelines,Active
+5,Guidelines for Language Evolution,Superseded
+9,Sample Plaintext PEP Template,Withdrawn
+6,Bug Fix Releases,Superseded
+7,Style Guide for C Code,Active
+
+## Примеры получаемых запросов в файле со сводкой по статусам PEP:
+Статус,Количество
+Active,32
+Superseded,23
+Withdrawn,57
+Final,281
+Rejected,124
+Draft,30
+Accepted,47
+Deferred,36
+Provisional,2
+April Fool!,1
+Total,633
+# Использованы асинхронные технологии фреймворка Scrapy с записью в режиме получения данных (item) и запись аккумулированных данных в файлы csv.
+
+# Автор проекта
+Мельников Вячеслав Александрович
+e-mail: melnikov.plusm@yandex.ru
+nik rqprograz
